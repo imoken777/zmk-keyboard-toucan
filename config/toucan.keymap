@@ -20,13 +20,13 @@
     combos {
         compatible = "zmk,combos";
 
-        j-k_comma {
-            bindings = <&kp COMMA>;
+        j-k_equal {
+            bindings = <&kp EQUAL>;
             key-positions = <19 20>;
         };
 
-        l-colon_priod {
-            bindings = <&kp PERIOD>;
+        l-colon_arrow {
+            bindings = <&kp GREATER_THAN>;
             key-positions = <21 22>;
         };
     };
@@ -37,30 +37,30 @@
         base {
             display-name = "BASE";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T      &kp Y      &kp U  &kp I          &kp O    &kp P          &kp EQUAL
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F  &kp G      &kp H      &kp J  &kp K          &kp L    &kp COLON      &kp ENTER
-&kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B      &kp N      &kp M  &kp COMMA      &kp DOT  &kp RIGHT_ALT  &kp ESC
-                              &kp LGUI  &mo 1  &kp SPACE  &kp RCTRL  &mo 2  &kp BACKSPACE
+&kp ESCAPE    &kp Q  &kp W  &kp E           &kp R  &kp T      &kp Y      &kp U  &kp I      &kp O       &kp P          &kp BACKSPACE
+&kp TAB       &kp A  &kp S  &kp D           &kp F  &kp G      &kp H      &kp J  &kp K      &kp L       &kp COLON      &kp SEMICOLON
+&kp LEFT_GUI  &kp Z  &kp X  &kp C           &kp V  &kp B      &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp RIGHT_ALT  &kp DELETE
+                            &kp LEFT_SHIFT  &mo 1  &kp SPACE  &kp ENTER  &mo 2  &kp RCTRL
             >;
         };
 
         sym {
             display-name = "SYM";
             bindings = <
-&trans          &none      &kp EXCLAMATION  &kp HASH           &kp DOLLAR        &kp PERCENT    &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL     &kp CARET
-&kp LEFT_SHIFT  &kp GRAVE  &kp LESS_THAN    &kp DOUBLE_QUOTES  &kp GREATER_THAN  &kp PIPE       &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMI      &kp ASTERISK
-&none           &none      &kp SLASH        &kp UNDERSCORE     &kp BACKSLASH     &kp AMPERSAND  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION  &none
-                                            &trans             &trans            &trans         &trans        &trans        &trans
+&none  &none      &kp EXCLAMATION  &kp HASH           &kp DOLLAR        &kp PERCENT    &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL     &none
+&none  &kp GRAVE  &kp LESS_THAN    &kp DOUBLE_QUOTES  &kp GREATER_THAN  &kp PIPE       &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTRK     &kp CARET
+&none  &none      &kp SLASH        &kp UNDERSCORE     &kp BACKSLASH     &kp AMPERSAND  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION  &none
+                                   &trans             &trans            &trans         &trans        &trans        &trans
             >;
         };
 
         nav {
             display-name = "NAV";
             bindings = <
-&trans  &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &mkp RCLK  &kp LEFT_PARENTHESIS  &kp UP_ARROW    &kp RIGHT_PARENTHESIS  &none  &none
-&none   &kp LCTRL  &kp LEFT_SHIFT    &kp LC(X)          &kp LC(C)       &kp LC(V)        &mkp MCLK  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT              &none  &none
-&none   &none      &none             &none              &none           &none            &none      &none                 &none           &none                  &none  &none
-                                     &mkp MB4           &trans          &mkp MB5         &trans     &trans                &trans
+&none  &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &mkp RCLK  &kp LEFT_PARENTHESIS  &kp UP_ARROW    &kp RIGHT_PARENTHESIS  &none  &none
+&none  &kp LCTRL  &kp LEFT_SHIFT    &kp LC(X)          &kp LC(C)       &kp LC(V)        &mkp MCLK  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT              &none  &none
+&none  &none      &none             &none              &none           &none            &none      &none                 &none           &none                  &none  &none
+                                    &mkp MB4           &trans          &mkp MB5         &trans     &trans                &trans
             >;
         };
 
