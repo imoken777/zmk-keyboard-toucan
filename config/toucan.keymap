@@ -33,30 +33,30 @@
         sym {
             display-name = "SYM";
             bindings = <
-&trans          &none            &none      &kp HASH           &kp DOLLAR     &kp PERCENT    &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL      &kp MINUS
-&kp LEFT_SHIFT  &kp EXCLAMATION  &kp GRAVE  &kp DOUBLE_QUOTES  &kp AMPERSAND  &kp PIPE       &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMI       &kp ASTERISK
-&none           &none            &none      &kp UNDERSCORE     &kp SLASH      &kp BACKSLASH  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LESS_THAN  &kp GREATER_THAN
-                                            &trans             &trans         &trans         &trans        &trans        &trans
+&trans          &none      &kp EXCLAMATION  &kp HASH           &kp DOLLAR        &kp PERCENT    &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL     &kp CARET
+&kp LEFT_SHIFT  &kp GRAVE  &kp LESS_THAN    &kp DOUBLE_QUOTES  &kp GREATER_THAN  &kp PIPE       &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMI      &kp ASTERISK
+&none           &none      &kp SLASH        &kp UNDERSCORE     &kp BACKSLASH     &kp AMPERSAND  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION  &none
+                                            &trans             &trans            &trans         &trans        &trans        &trans
             >;
         };
 
         nav {
             display-name = "NAV";
             bindings = <
-&trans     &none           &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none   &mkp RCLK  &kp LEFT_PARENTHESIS  &kp UP_ARROW    &kp RIGHT_PARENTHESIS  &none  &none
-&kp LCTRL  &kp LEFT_SHIFT  &kp LC(X)  &kp LC(C)         &kp LC(V)          &none   &mkp MCLK  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT              &none  &none
-&none      &none           &none      &none             &none              &none   &mkp MB4   &mkp MB5              &none           &none                  &none  &none
-                                      &trans            &trans             &trans  &trans     &trans                &trans
+&trans  &none      &none           &none      &none      &none      &mkp RCLK  &kp LEFT_PARENTHESIS  &kp UP_ARROW    &kp RIGHT_PARENTHESIS  &none  &none
+&none   &kp LCTRL  &kp LEFT_SHIFT  &kp LC(X)  &kp LC(C)  &kp LC(V)  &mkp MCLK  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT              &none  &none
+&none   &none      &none           &none      &none      &none      &none      &kp LEFT_BRACKET      &none           &kp RIGHT_BRACKET      &none  &none
+                                   &mkp MB4   &trans     &mkp MB5   &trans     &trans                &trans
             >;
         };
 
         adj {
             display-name = "ADJ";
             bindings = <
-&mo 0           &trans  &trans  &trans    &trans  &trans     &trans   &kp F7  &kp F8     &kp F8  &kp F12  &kp BSPC
-&kp LEFT_SHIFT  &trans  &trans  &trans    &trans  &trans     &trans   &kp F4  &kp F5     &kp F6  &kp F11  &trans
-&trans          &trans  &trans  &trans    &trans  &trans     &trans   &kp F1  &kp F2     &kp F3  &kp F10  &trans
-                                &kp LGUI  &mo 2   &kp SPACE  &kp RET  &mo 1   &kp RCTRL
+&mo 0           &trans  &trans  &trans  &trans  &trans  &trans  &kp F7  &kp F8  &kp F8  &kp F12  &kp BSPC
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
